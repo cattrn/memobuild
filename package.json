@@ -1,0 +1,24 @@
+{
+  "name": "memobuild",
+  "version": "1.0.0",
+  "description": "A text and image feed that is completely built by the user - only content that the user wants.",
+  "main": "/server/server.js",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cattrn/memobuild.git"
+  },
+  "author": "Cat Turnbull",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cattrn/memobuild/issues"
+  },
+  "homepage": "https://github.com/cattrn/memobuild#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
